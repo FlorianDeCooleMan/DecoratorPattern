@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace DecoratorPattern.Beverages
 {
-    enum Size
+    public enum Size
     {
         TALL,
         GRANDE,
         VENDI
     }
-    internal abstract class Beverage
+    public abstract class Beverage
     {
         public Size Size { get { return size; } set { size = value; } }
-        private Size size;
+        public Size size;
 
         protected string description = "Unknown";
         protected Beverage baseBeverage = null;
